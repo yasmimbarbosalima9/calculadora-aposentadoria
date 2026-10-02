@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculadora de Aposentadoria</string>
+
+    <string name="titulo">Calculadora de Aposentadoria</string>
+    <string name="subtitulo">Descubra quanto tempo falta.</string>
+
+    <string name="idade_hint">Idade atual</string>
+    <string name="requerido">Requerido</string>
+
+    <string name="calcular">CALCULAR</string>
+    <string name="limpar">LIMPAR</string>
+
+    <string name="resultado_inicial">Seu resultado aparecerá aqui.</string>
+
+    <string name="erro_idade">Informe sua idade.</string>
+    <string name="erro_genero">Selecione o gênero.</string>
+    <string name="ja_aposentado">Você já deveria estar aposentado.</string>
+    <string name="pode_aposentar">Você já pode se aposentar!</string>
+    <plurals name="faltam_anos">
+        <item quantity="one">Falta %d ano para você se aposentar.</item>
+        <item quantity="other">Faltam %d anos para você se aposentar.</item>
+    </plurals>
+
+    <string name="aluno">Aluna: Yasmim Barbosa Lima</string>
+
+    <string-array name="generos">
+        <item>Selecione o gênero</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+
+</resources>

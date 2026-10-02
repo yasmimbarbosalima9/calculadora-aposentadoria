@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta do app: tons de roxo com destaque lilás -->
+    <color name="roxo_escuro">#2E0854</color>
+    <color name="roxo">#6A1B9A</color>
+    <color name="lilas">#CE93D8</color>
+    <color name="lilas_claro">#F3E5F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF8A80</color>
+    <color name="resultado_fundo">#26FFFFFF</color>
+</resources>

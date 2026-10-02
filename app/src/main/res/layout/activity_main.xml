@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/titulo"
+        android:textColor="@color/lilas"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/subtitulo"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <!--
+        Atributos do TextInputLayout:
+        app:helperText          -> texto de ajuda exibido abaixo do campo (aqui indica que o campo é obrigatório).
+        app:counterEnabled      -> ativa o contador de caracteres digitados no canto inferior direito.
+        app:counterMaxLength    -> número máximo de caracteres mostrado no contador (ex.: 2/3).
+        app:endIconMode         -> ícone no final do campo; "clear_text" mostra um X que apaga o texto digitado.
+        app:helperTextTextColor -> cor do texto de ajuda (helperText).
+        app:startIconDrawable   -> ícone exibido no início do campo.
+        style OutlinedBox       -> deixa o campo com borda contornada (estilo outlined do Material).
+    -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutIdade"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/idade_hint"
+        android:textColorHint="@color/lilas_claro"
+        app:boxStrokeColor="@color/lilas"
+        app:counterEnabled="true"
+        app:counterMaxLength="3"
+        app:counterTextColor="@color/white"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/lilas"
+        app:helperText="@string/requerido"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/lilas"
+        app:startIconDrawable="@drawable/ic_calendario"
+        app:startIconTint="@color/lilas">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/lilas"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lilas"
+        android:drawableLeft="@drawable/ic_play"
+        app:icon="@drawable/ic_play"
+        app:iconTint="@color/roxo_escuro"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="12dp"
+        android:text="@string/calcular"
+        android:textColor="@color/roxo_escuro"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/roxo_escuro"
+        android:drawableLeft="@drawable/ic_refazer"
+        app:icon="@drawable/ic_refazer"
+        app:iconTint="@color/lilas"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="12dp"
+        android:text="@string/limpar"
+        android:textColor="@color/lilas"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/resultado_fundo"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="@string/resultado_inicial"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtAluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/aluno"
+        android:textColor="@color/lilas_claro"
+        android:textSize="15sp" />
+
+</LinearLayout>
